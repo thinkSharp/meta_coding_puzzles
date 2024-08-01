@@ -42,9 +42,10 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
         for p in pos['P']:
           dis_ap = abs(a-p)
           if dis_ap >= X and dis_ap <= Y:
-
+              
             if p <= a <=b or b <= a <= p:
-                count +=1
+              count +=1
+              print(f'{a} - {b} - {p}')
 
   return count
 
